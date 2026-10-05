@@ -1,0 +1,1 @@
+/usr/bin/c++ CMakeFiles/P1_Automata_pila.dir/src/Alfabeto.cpp.o CMakeFiles/P1_Automata_pila.dir/src/Automata.cpp.o CMakeFiles/P1_Automata_pila.dir/src/Estado.cpp.o CMakeFiles/P1_Automata_pila.dir/src/LeerFichero.cpp.o CMakeFiles/P1_Automata_pila.dir/src/Transicion.cpp.o CMakeFiles/P1_Automata_pila.dir/src/main.cpp.o -o P1_Automata_pila 

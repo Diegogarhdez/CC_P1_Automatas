@@ -14,9 +14,20 @@
 #include <sstream>
 #include <string>
 #include <iostream>
+#include <filesystem>
 
 Automata LeerFichero::parsear(bool modo_traza) {
-  std::ifstream fichero_entrada = std::ifstream(nombre_fichero_);
+  const std::filesystem::path ruta_fichero(nombre_fichero_);
+  std::ifstream fichero_entrada(ruta_fichero);
+  if (!fichero_entrada.is_open() && ruta_fichero.is_relative() &&
+      ruta_fichero.parent_path().empty()) {
+    fichero_entrada.clear();
+    fichero_entrada.open(std::filesystem::path("../tests") / ruta_fichero);
+    if (!fichero_entrada.is_open()) {
+      fichero_entrada.clear();
+      fichero_entrada.open(std::filesystem::path("tests") / ruta_fichero);
+    }
+  }
   if (!fichero_entrada.is_open()) {
     throw std::runtime_error("Error al abrir el fichero\n");
   }

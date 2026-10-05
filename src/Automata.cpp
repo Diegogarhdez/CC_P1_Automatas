@@ -44,7 +44,9 @@ void Automata::anadirTransicion(const std::string& estado_origen, const Transici
 
 bool Automata::comprobarCadena(const std::string& cadena) {
   Pila pila_inicial{simbolo_inicial_pila_};
-  return evaluarRecursivo(estado_inicial_, cadena, pila_inicial);
+  const bool aceptada = evaluarRecursivo(estado_inicial_, cadena, pila_inicial);
+  if (!aceptada && modo_traza_) std::cout << "-------------\n";
+  return aceptada;
 }
 
 bool Automata::evaluarRecursivo(const std::string& estado_actual, 
@@ -62,7 +64,8 @@ bool Automata::evaluarRecursivo(const std::string& estado_actual,
   std::vector<Transicion> posibilidades = estados_[estado_actual].obtenerTransicionesPosibles(simbolo_entrada, cima_pila);
   if (modo_traza_) imprimirTraza(estado_actual, cadena_restante, pila_actual, posibilidades);
 
-  for (Transicion t : posibilidades) {
+  for (std::size_t indice = 0; indice < posibilidades.size(); ++indice) {
+    const Transicion& t = posibilidades[indice];
 
     std::string nueva_cadena = cadena_restante;
     if (t.getSimboloEntrada() != Alfabeto::EPSILON && !nueva_cadena.empty()) {
@@ -79,8 +82,11 @@ bool Automata::evaluarRecursivo(const std::string& estado_actual,
     if (evaluarRecursivo(t.getEstadoSiguiente(), nueva_cadena, nueva_pila)) {
       return true;
     }
+    if (modo_traza_ && indice + 1 < posibilidades.size()) {
+      std::cout << "-------------\n";
+    }
   }
-  
+
   return false;
 }
 
