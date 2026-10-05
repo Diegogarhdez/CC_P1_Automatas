@@ -19,6 +19,7 @@
 
 #include "Alfabeto.h"
 #include "Estado.h"
+#include "Pila.h"
 #include "Transicion.h"
 
 class Automata {
@@ -44,10 +45,10 @@ class Automata {
   bool modo_traza_;
   bool evaluarRecursivo(const std::string& estado_actual, 
                         const std::string& cadena_restante, 
-                        std::string pila_actual);
+                                Pila pila_actual);
   void imprimirTraza(const std::string& estado, 
                      const std::string& cadena, 
-                     const std::string& pila,
+                            const Pila& pila,
                      const std::vector<Transicion>& posibles_transiciones) const;
 };
 

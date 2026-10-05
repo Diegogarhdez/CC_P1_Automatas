@@ -15,16 +15,14 @@
 #include <string>
 #include <iostream>
 
-Automata LeerFichero::parsear() {
+Automata LeerFichero::parsear(bool modo_traza) {
   std::ifstream fichero_entrada = std::ifstream(nombre_fichero_);
-
   if (!fichero_entrada.is_open()) {
     throw std::runtime_error("Error al abrir el fichero\n");
   }
 
-  Automata automata_configurado;
+  Automata automata_configurado(modo_traza);
   std::string linea;
-
   auto leerLineaValida = [&]() {
     while (std::getline(fichero_entrada, linea)) {
       if (linea.empty()) continue;
@@ -39,7 +37,7 @@ Automata LeerFichero::parsear() {
     std::stringstream ss(linea);
     std::string estado;
     while (ss >> estado) {
-      // TODO: automata_configurado.anadirEstado(estado);
+      automata_configurado.anadirEstado(estado);
     }
   }
 
@@ -48,7 +46,7 @@ Automata LeerFichero::parsear() {
     std::stringstream ss(linea);
     char simbolo;
     while (ss >> simbolo) {
-      // TODO: automata_configurado.anadirSimboloEntrada(simbolo);
+      automata_configurado.anadirSimboloEntrada(simbolo);
     }
   }
 
@@ -57,7 +55,7 @@ Automata LeerFichero::parsear() {
     std::stringstream ss(linea);
     char simbolo;
     while (ss >> simbolo) {
-      // TODO: automata_configurado.anadirSimboloPila(simbolo);
+      automata_configurado.anadirSimboloPila(simbolo);
     }
   }
 
@@ -66,7 +64,7 @@ Automata LeerFichero::parsear() {
     std::stringstream ss(linea);
     std::string estado_inicial;
     ss >> estado_inicial;
-    // TODO: automata_configurado.setEstadoInicial(estado_inicial);
+    automata_configurado.setEstadoInicial(estado_inicial);
   }
 
   // Simbolo inicial en la pila
@@ -74,7 +72,7 @@ Automata LeerFichero::parsear() {
     std::stringstream ss(linea);
     char simbolo_pila;
     ss >> simbolo_pila;
-    // TODO: automata_configurado.setSimboloInicialPila(simbolo_pila);
+    automata_configurado.setSimboloInicialPila(simbolo_pila);
   }
 
   while (leerLineaValida()) {
@@ -83,10 +81,9 @@ Automata LeerFichero::parsear() {
     char sim_entrada, sim_extrae_pila;
     if (ss >> estado_origen >> sim_entrada >> sim_extrae_pila >> estado_destino >> inserta_pila) {
       Transicion t(sim_entrada, sim_extrae_pila, estado_destino, inserta_pila);
-      // TODO: automata_configurado.anadirTransicion(estado_origen, t);
+      automata_configurado.anadirTransicion(estado_origen, t);
     }
   }
 
   return automata_configurado;
-
 }

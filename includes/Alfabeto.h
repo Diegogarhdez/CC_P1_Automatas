@@ -19,20 +19,15 @@ class Alfabeto {
   static const char EPSILON = '.';
 
   Alfabeto() {}
-  Alfabeto(const std::set<char>& alfabeto) {
-    alfabeto_ = alfabeto;
-  }
-
-  bool pertenece(char c) const {
-    return c == EPSILON || alfabeto_.find(c) != alfabeto_.end();
-  }
-
-  void insertarSimbolo(char c) {
-    alfabeto_.insert(c);
-  }
+  Alfabeto(const std::set<char>& alfabeto) { alfabeto_ = alfabeto; }
+  bool pertenece(char c) const { return c == EPSILON || alfabeto_.find(c) != alfabeto_.end(); }
+  void insertarSimbolo(char c) { alfabeto_.insert(c); }
+  std::set<char> getAlfabeto() const { return alfabeto_; }
 
  private:
   std::set<char> alfabeto_;
 };
+
+std::ostream& operator<<(std::ostream& os, const Alfabeto& alfabeto);
 
 #endif

@@ -21,7 +21,7 @@ class LeerFichero {
   LeerFichero(const std::string& nombre_fichero) : nombre_fichero_(nombre_fichero) {}
 
   // Método principal que orquesta toda la lectura y construye el autómata
-  Automata parsear();
+  Automata parsear(bool modo_traza = false);
 
  private:
   std::string nombre_fichero_;

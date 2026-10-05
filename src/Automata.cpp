@@ -43,22 +43,24 @@ void Automata::anadirTransicion(const std::string& estado_origen, const Transici
 }
 
 bool Automata::comprobarCadena(const std::string& cadena) {
-  std::string pila_inicial{simbolo_inicial_pila_}; 
+  Pila pila_inicial{simbolo_inicial_pila_};
   return evaluarRecursivo(estado_inicial_, cadena, pila_inicial);
 }
 
 bool Automata::evaluarRecursivo(const std::string& estado_actual, 
                                 const std::string& cadena_restante, 
-                                std::string pila_actual) {
+                                Pila pila_actual) {
 
-  if (modo_traza_) imprimirTraza(estado_actual, cadena_restante, pila_actual);
-  if (pila_actual.empty() && cadena_restante.empty()) return true;
-  if (pila_actual.empty()) return false;
+  if (pila_actual.vacia()) {
+    if (modo_traza_) imprimirTraza(estado_actual, cadena_restante, pila_actual, {});
+    return cadena_restante.empty();
+  }
 
   char simbolo_entrada = cadena_restante.empty() ? Alfabeto::EPSILON : cadena_restante[0];
-  char cima_pila = pila_actual[0];
+  char cima_pila = pila_actual.cima();
   
   std::vector<Transicion> posibilidades = estados_[estado_actual].obtenerTransicionesPosibles(simbolo_entrada, cima_pila);
+  if (modo_traza_) imprimirTraza(estado_actual, cadena_restante, pila_actual, posibilidades);
 
   for (Transicion t : posibilidades) {
 
@@ -67,12 +69,11 @@ bool Automata::evaluarRecursivo(const std::string& estado_actual,
       nueva_cadena.erase(0, 1);
     }
 
-    std::string nueva_pila = pila_actual;
-    nueva_pila.erase(0, 1);
+    Pila nueva_pila = pila_actual;
+    nueva_pila.desapilar();
 
     if (t.getSimbolosAInsertar() != std::string{Alfabeto::EPSILON}) {
-      // Como metemos en la cima de la pila, insertamos al principio del string
-      nueva_pila.insert(0, t.getSimbolosAInsertar()); 
+      nueva_pila.apilar(t.getSimbolosAInsertar());
     }
 
     if (evaluarRecursivo(t.getEstadoSiguiente(), nueva_cadena, nueva_pila)) {
@@ -81,4 +82,26 @@ bool Automata::evaluarRecursivo(const std::string& estado_actual,
   }
   
   return false;
+}
+
+void Automata::imprimirTraza(const std::string& estado, 
+                   const std::string& cadena, 
+         const Pila& pila,
+                   const std::vector<Transicion>& posibles_transiciones) const {
+  std::cout << estado << " | "
+            << (cadena.empty() ? std::string(1, Alfabeto::EPSILON) : cadena) << " | "
+       << (pila.vacia() ? "-" : pila.comoCadena()) << " | ";
+
+  if (posibles_transiciones.empty()) {
+    std::cout << "ninguna";
+  } else {
+    for (std::size_t indice = 0; indice < posibles_transiciones.size(); ++indice) {
+      const Transicion& transicion = posibles_transiciones[indice];
+      if (indice > 0) std::cout << ", ";
+      std::cout << "(" << transicion.getSimboloEntrada() << ", "
+                << transicion.getSimboloPila() << ", "
+                << transicion.getEstadoSiguiente() << ")";
+    }
+  }
+  std::cout << '\n';
 }
