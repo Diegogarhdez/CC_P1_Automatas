@@ -1,7 +1,7 @@
 CMakeFiles/P1_Automata_pila.dir/src/Automata.cpp.o: \
- /home/usuario/CC/CC_P1_Automatas/src/Automata.cpp \
+ /home/usuario/CC_P1_Automatas/src/Automata.cpp \
  /usr/include/stdc-predef.h \
- /home/usuario/CC/CC_P1_Automatas/src/../includes/Automata.h \
+ /home/usuario/CC_P1_Automatas/src/../includes/Automata.h \
  /usr/include/c++/13/string /usr/include/c++/13/bits/requires_hosted.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/os_defines.h \
@@ -170,7 +170,7 @@ CMakeFiles/P1_Automata_pila.dir/src/Automata.cpp.o: \
  /usr/include/c++/13/bits/basic_ios.tcc \
  /usr/include/c++/13/bits/ostream.tcc /usr/include/c++/13/istream \
  /usr/include/c++/13/bits/istream.tcc \
- /home/usuario/CC/CC_P1_Automatas/src/../includes/Alfabeto.h \
- /home/usuario/CC/CC_P1_Automatas/src/../includes/Estado.h \
- /home/usuario/CC/CC_P1_Automatas/src/../includes/Transicion.h \
- /home/usuario/CC/CC_P1_Automatas/src/../includes/Pila.h
+ /home/usuario/CC_P1_Automatas/src/../includes/Alfabeto.h \
+ /home/usuario/CC_P1_Automatas/src/../includes/Estado.h \
+ /home/usuario/CC_P1_Automatas/src/../includes/Transicion.h \
+ /home/usuario/CC_P1_Automatas/src/../includes/Pila.h

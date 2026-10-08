@@ -1,7 +1,7 @@
 CMakeFiles/P1_Automata_pila.dir/src/Alfabeto.cpp.o: \
- /home/usuario/CC/CC_P1_Automatas/src/Alfabeto.cpp \
+ /home/usuario/CC_P1_Automatas/src/Alfabeto.cpp \
  /usr/include/stdc-predef.h \
- /home/usuario/CC/CC_P1_Automatas/src/../includes/Alfabeto.h \
+ /home/usuario/CC_P1_Automatas/src/../includes/Alfabeto.h \
  /usr/include/c++/13/iostream /usr/include/c++/13/bits/requires_hosted.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/os_defines.h \

@@ -1,7 +1,7 @@
 CMakeFiles/P1_Automata_pila.dir/src/LeerFichero.cpp.o: \
- /home/usuario/CC/CC_P1_Automatas/src/LeerFichero.cpp \
+ /home/usuario/CC_P1_Automatas/src/LeerFichero.cpp \
  /usr/include/stdc-predef.h \
- /home/usuario/CC/CC_P1_Automatas/src/../includes/LeerFichero.h \
+ /home/usuario/CC_P1_Automatas/src/../includes/LeerFichero.h \
  /usr/include/c++/13/string /usr/include/c++/13/bits/requires_hosted.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/os_defines.h \
@@ -161,7 +161,7 @@ CMakeFiles/P1_Automata_pila.dir/src/LeerFichero.cpp.o: \
  /usr/include/x86_64-linux-gnu/c++/13/bits/basic_file.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/c++io.h \
  /usr/include/c++/13/bits/fstream.tcc \
- /home/usuario/CC/CC_P1_Automatas/src/../includes/Automata.h \
+ /home/usuario/CC_P1_Automatas/src/../includes/Automata.h \
  /usr/include/c++/13/map /usr/include/c++/13/bits/stl_tree.h \
  /usr/include/c++/13/ext/aligned_buffer.h \
  /usr/include/c++/13/bits/node_handle.h \
@@ -174,11 +174,11 @@ CMakeFiles/P1_Automata_pila.dir/src/LeerFichero.cpp.o: \
  /usr/include/c++/13/bits/stl_vector.h \
  /usr/include/c++/13/bits/stl_bvector.h \
  /usr/include/c++/13/bits/vector.tcc /usr/include/c++/13/iostream \
- /home/usuario/CC/CC_P1_Automatas/src/../includes/Alfabeto.h \
- /home/usuario/CC/CC_P1_Automatas/src/../includes/Estado.h \
- /home/usuario/CC/CC_P1_Automatas/src/../includes/Transicion.h \
- /home/usuario/CC/CC_P1_Automatas/src/../includes/Pila.h \
- /home/usuario/CC/CC_P1_Automatas/src/../includes/Transicion.h \
+ /home/usuario/CC_P1_Automatas/src/../includes/Alfabeto.h \
+ /home/usuario/CC_P1_Automatas/src/../includes/Estado.h \
+ /home/usuario/CC_P1_Automatas/src/../includes/Transicion.h \
+ /home/usuario/CC_P1_Automatas/src/../includes/Pila.h \
+ /home/usuario/CC_P1_Automatas/src/../includes/Transicion.h \
  /usr/include/c++/13/sstream /usr/include/c++/13/bits/sstream.tcc \
  /usr/include/c++/13/filesystem /usr/include/c++/13/bits/fs_fwd.h \
  /usr/include/c++/13/cstdint \

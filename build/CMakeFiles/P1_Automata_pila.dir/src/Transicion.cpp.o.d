@@ -1,7 +1,7 @@
 CMakeFiles/P1_Automata_pila.dir/src/Transicion.cpp.o: \
- /home/usuario/CC/CC_P1_Automatas/src/Transicion.cpp \
+ /home/usuario/CC_P1_Automatas/src/Transicion.cpp \
  /usr/include/stdc-predef.h \
- /home/usuario/CC/CC_P1_Automatas/src/../includes/Transicion.h \
+ /home/usuario/CC_P1_Automatas/src/../includes/Transicion.h \
  /usr/include/c++/13/iostream /usr/include/c++/13/bits/requires_hosted.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/os_defines.h \
@@ -156,7 +156,7 @@ CMakeFiles/P1_Automata_pila.dir/src/Transicion.cpp.o: \
  /usr/include/c++/13/bits/basic_ios.tcc \
  /usr/include/c++/13/bits/ostream.tcc /usr/include/c++/13/istream \
  /usr/include/c++/13/bits/istream.tcc \
- /home/usuario/CC/CC_P1_Automatas/src/../includes/Alfabeto.h \
+ /home/usuario/CC_P1_Automatas/src/../includes/Alfabeto.h \
  /usr/include/c++/13/set /usr/include/c++/13/bits/stl_tree.h \
  /usr/include/c++/13/ext/aligned_buffer.h \
  /usr/include/c++/13/bits/node_handle.h \

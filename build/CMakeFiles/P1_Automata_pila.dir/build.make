@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/usuario/CC/CC_P1_Automatas
+CMAKE_SOURCE_DIR = /home/usuario/CC_P1_Automatas
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/usuario/CC/CC_P1_Automatas/build
+CMAKE_BINARY_DIR = /home/usuario/CC_P1_Automatas/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/P1_Automata_pila.dir/depend.make
@@ -70,88 +70,88 @@ include CMakeFiles/P1_Automata_pila.dir/progress.make
 include CMakeFiles/P1_Automata_pila.dir/flags.make
 
 CMakeFiles/P1_Automata_pila.dir/src/Alfabeto.cpp.o: CMakeFiles/P1_Automata_pila.dir/flags.make
-CMakeFiles/P1_Automata_pila.dir/src/Alfabeto.cpp.o: /home/usuario/CC/CC_P1_Automatas/src/Alfabeto.cpp
+CMakeFiles/P1_Automata_pila.dir/src/Alfabeto.cpp.o: /home/usuario/CC_P1_Automatas/src/Alfabeto.cpp
 CMakeFiles/P1_Automata_pila.dir/src/Alfabeto.cpp.o: CMakeFiles/P1_Automata_pila.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/usuario/CC/CC_P1_Automatas/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/P1_Automata_pila.dir/src/Alfabeto.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/P1_Automata_pila.dir/src/Alfabeto.cpp.o -MF CMakeFiles/P1_Automata_pila.dir/src/Alfabeto.cpp.o.d -o CMakeFiles/P1_Automata_pila.dir/src/Alfabeto.cpp.o -c /home/usuario/CC/CC_P1_Automatas/src/Alfabeto.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/usuario/CC_P1_Automatas/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/P1_Automata_pila.dir/src/Alfabeto.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/P1_Automata_pila.dir/src/Alfabeto.cpp.o -MF CMakeFiles/P1_Automata_pila.dir/src/Alfabeto.cpp.o.d -o CMakeFiles/P1_Automata_pila.dir/src/Alfabeto.cpp.o -c /home/usuario/CC_P1_Automatas/src/Alfabeto.cpp
 
 CMakeFiles/P1_Automata_pila.dir/src/Alfabeto.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/P1_Automata_pila.dir/src/Alfabeto.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/usuario/CC/CC_P1_Automatas/src/Alfabeto.cpp > CMakeFiles/P1_Automata_pila.dir/src/Alfabeto.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/usuario/CC_P1_Automatas/src/Alfabeto.cpp > CMakeFiles/P1_Automata_pila.dir/src/Alfabeto.cpp.i
 
 CMakeFiles/P1_Automata_pila.dir/src/Alfabeto.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/P1_Automata_pila.dir/src/Alfabeto.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/usuario/CC/CC_P1_Automatas/src/Alfabeto.cpp -o CMakeFiles/P1_Automata_pila.dir/src/Alfabeto.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/usuario/CC_P1_Automatas/src/Alfabeto.cpp -o CMakeFiles/P1_Automata_pila.dir/src/Alfabeto.cpp.s
 
 CMakeFiles/P1_Automata_pila.dir/src/Automata.cpp.o: CMakeFiles/P1_Automata_pila.dir/flags.make
-CMakeFiles/P1_Automata_pila.dir/src/Automata.cpp.o: /home/usuario/CC/CC_P1_Automatas/src/Automata.cpp
+CMakeFiles/P1_Automata_pila.dir/src/Automata.cpp.o: /home/usuario/CC_P1_Automatas/src/Automata.cpp
 CMakeFiles/P1_Automata_pila.dir/src/Automata.cpp.o: CMakeFiles/P1_Automata_pila.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/usuario/CC/CC_P1_Automatas/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/P1_Automata_pila.dir/src/Automata.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/P1_Automata_pila.dir/src/Automata.cpp.o -MF CMakeFiles/P1_Automata_pila.dir/src/Automata.cpp.o.d -o CMakeFiles/P1_Automata_pila.dir/src/Automata.cpp.o -c /home/usuario/CC/CC_P1_Automatas/src/Automata.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/usuario/CC_P1_Automatas/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/P1_Automata_pila.dir/src/Automata.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/P1_Automata_pila.dir/src/Automata.cpp.o -MF CMakeFiles/P1_Automata_pila.dir/src/Automata.cpp.o.d -o CMakeFiles/P1_Automata_pila.dir/src/Automata.cpp.o -c /home/usuario/CC_P1_Automatas/src/Automata.cpp
 
 CMakeFiles/P1_Automata_pila.dir/src/Automata.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/P1_Automata_pila.dir/src/Automata.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/usuario/CC/CC_P1_Automatas/src/Automata.cpp > CMakeFiles/P1_Automata_pila.dir/src/Automata.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/usuario/CC_P1_Automatas/src/Automata.cpp > CMakeFiles/P1_Automata_pila.dir/src/Automata.cpp.i
 
 CMakeFiles/P1_Automata_pila.dir/src/Automata.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/P1_Automata_pila.dir/src/Automata.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/usuario/CC/CC_P1_Automatas/src/Automata.cpp -o CMakeFiles/P1_Automata_pila.dir/src/Automata.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/usuario/CC_P1_Automatas/src/Automata.cpp -o CMakeFiles/P1_Automata_pila.dir/src/Automata.cpp.s
 
 CMakeFiles/P1_Automata_pila.dir/src/Estado.cpp.o: CMakeFiles/P1_Automata_pila.dir/flags.make
-CMakeFiles/P1_Automata_pila.dir/src/Estado.cpp.o: /home/usuario/CC/CC_P1_Automatas/src/Estado.cpp
+CMakeFiles/P1_Automata_pila.dir/src/Estado.cpp.o: /home/usuario/CC_P1_Automatas/src/Estado.cpp
 CMakeFiles/P1_Automata_pila.dir/src/Estado.cpp.o: CMakeFiles/P1_Automata_pila.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/usuario/CC/CC_P1_Automatas/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/P1_Automata_pila.dir/src/Estado.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/P1_Automata_pila.dir/src/Estado.cpp.o -MF CMakeFiles/P1_Automata_pila.dir/src/Estado.cpp.o.d -o CMakeFiles/P1_Automata_pila.dir/src/Estado.cpp.o -c /home/usuario/CC/CC_P1_Automatas/src/Estado.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/usuario/CC_P1_Automatas/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/P1_Automata_pila.dir/src/Estado.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/P1_Automata_pila.dir/src/Estado.cpp.o -MF CMakeFiles/P1_Automata_pila.dir/src/Estado.cpp.o.d -o CMakeFiles/P1_Automata_pila.dir/src/Estado.cpp.o -c /home/usuario/CC_P1_Automatas/src/Estado.cpp
 
 CMakeFiles/P1_Automata_pila.dir/src/Estado.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/P1_Automata_pila.dir/src/Estado.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/usuario/CC/CC_P1_Automatas/src/Estado.cpp > CMakeFiles/P1_Automata_pila.dir/src/Estado.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/usuario/CC_P1_Automatas/src/Estado.cpp > CMakeFiles/P1_Automata_pila.dir/src/Estado.cpp.i
 
 CMakeFiles/P1_Automata_pila.dir/src/Estado.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/P1_Automata_pila.dir/src/Estado.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/usuario/CC/CC_P1_Automatas/src/Estado.cpp -o CMakeFiles/P1_Automata_pila.dir/src/Estado.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/usuario/CC_P1_Automatas/src/Estado.cpp -o CMakeFiles/P1_Automata_pila.dir/src/Estado.cpp.s
 
 CMakeFiles/P1_Automata_pila.dir/src/LeerFichero.cpp.o: CMakeFiles/P1_Automata_pila.dir/flags.make
-CMakeFiles/P1_Automata_pila.dir/src/LeerFichero.cpp.o: /home/usuario/CC/CC_P1_Automatas/src/LeerFichero.cpp
+CMakeFiles/P1_Automata_pila.dir/src/LeerFichero.cpp.o: /home/usuario/CC_P1_Automatas/src/LeerFichero.cpp
 CMakeFiles/P1_Automata_pila.dir/src/LeerFichero.cpp.o: CMakeFiles/P1_Automata_pila.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/usuario/CC/CC_P1_Automatas/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/P1_Automata_pila.dir/src/LeerFichero.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/P1_Automata_pila.dir/src/LeerFichero.cpp.o -MF CMakeFiles/P1_Automata_pila.dir/src/LeerFichero.cpp.o.d -o CMakeFiles/P1_Automata_pila.dir/src/LeerFichero.cpp.o -c /home/usuario/CC/CC_P1_Automatas/src/LeerFichero.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/usuario/CC_P1_Automatas/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/P1_Automata_pila.dir/src/LeerFichero.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/P1_Automata_pila.dir/src/LeerFichero.cpp.o -MF CMakeFiles/P1_Automata_pila.dir/src/LeerFichero.cpp.o.d -o CMakeFiles/P1_Automata_pila.dir/src/LeerFichero.cpp.o -c /home/usuario/CC_P1_Automatas/src/LeerFichero.cpp
 
 CMakeFiles/P1_Automata_pila.dir/src/LeerFichero.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/P1_Automata_pila.dir/src/LeerFichero.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/usuario/CC/CC_P1_Automatas/src/LeerFichero.cpp > CMakeFiles/P1_Automata_pila.dir/src/LeerFichero.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/usuario/CC_P1_Automatas/src/LeerFichero.cpp > CMakeFiles/P1_Automata_pila.dir/src/LeerFichero.cpp.i
 
 CMakeFiles/P1_Automata_pila.dir/src/LeerFichero.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/P1_Automata_pila.dir/src/LeerFichero.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/usuario/CC/CC_P1_Automatas/src/LeerFichero.cpp -o CMakeFiles/P1_Automata_pila.dir/src/LeerFichero.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/usuario/CC_P1_Automatas/src/LeerFichero.cpp -o CMakeFiles/P1_Automata_pila.dir/src/LeerFichero.cpp.s
 
 CMakeFiles/P1_Automata_pila.dir/src/Transicion.cpp.o: CMakeFiles/P1_Automata_pila.dir/flags.make
-CMakeFiles/P1_Automata_pila.dir/src/Transicion.cpp.o: /home/usuario/CC/CC_P1_Automatas/src/Transicion.cpp
+CMakeFiles/P1_Automata_pila.dir/src/Transicion.cpp.o: /home/usuario/CC_P1_Automatas/src/Transicion.cpp
 CMakeFiles/P1_Automata_pila.dir/src/Transicion.cpp.o: CMakeFiles/P1_Automata_pila.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/usuario/CC/CC_P1_Automatas/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/P1_Automata_pila.dir/src/Transicion.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/P1_Automata_pila.dir/src/Transicion.cpp.o -MF CMakeFiles/P1_Automata_pila.dir/src/Transicion.cpp.o.d -o CMakeFiles/P1_Automata_pila.dir/src/Transicion.cpp.o -c /home/usuario/CC/CC_P1_Automatas/src/Transicion.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/usuario/CC_P1_Automatas/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/P1_Automata_pila.dir/src/Transicion.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/P1_Automata_pila.dir/src/Transicion.cpp.o -MF CMakeFiles/P1_Automata_pila.dir/src/Transicion.cpp.o.d -o CMakeFiles/P1_Automata_pila.dir/src/Transicion.cpp.o -c /home/usuario/CC_P1_Automatas/src/Transicion.cpp
 
 CMakeFiles/P1_Automata_pila.dir/src/Transicion.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/P1_Automata_pila.dir/src/Transicion.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/usuario/CC/CC_P1_Automatas/src/Transicion.cpp > CMakeFiles/P1_Automata_pila.dir/src/Transicion.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/usuario/CC_P1_Automatas/src/Transicion.cpp > CMakeFiles/P1_Automata_pila.dir/src/Transicion.cpp.i
 
 CMakeFiles/P1_Automata_pila.dir/src/Transicion.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/P1_Automata_pila.dir/src/Transicion.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/usuario/CC/CC_P1_Automatas/src/Transicion.cpp -o CMakeFiles/P1_Automata_pila.dir/src/Transicion.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/usuario/CC_P1_Automatas/src/Transicion.cpp -o CMakeFiles/P1_Automata_pila.dir/src/Transicion.cpp.s
 
 CMakeFiles/P1_Automata_pila.dir/src/main.cpp.o: CMakeFiles/P1_Automata_pila.dir/flags.make
-CMakeFiles/P1_Automata_pila.dir/src/main.cpp.o: /home/usuario/CC/CC_P1_Automatas/src/main.cpp
+CMakeFiles/P1_Automata_pila.dir/src/main.cpp.o: /home/usuario/CC_P1_Automatas/src/main.cpp
 CMakeFiles/P1_Automata_pila.dir/src/main.cpp.o: CMakeFiles/P1_Automata_pila.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/usuario/CC/CC_P1_Automatas/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/P1_Automata_pila.dir/src/main.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/P1_Automata_pila.dir/src/main.cpp.o -MF CMakeFiles/P1_Automata_pila.dir/src/main.cpp.o.d -o CMakeFiles/P1_Automata_pila.dir/src/main.cpp.o -c /home/usuario/CC/CC_P1_Automatas/src/main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/usuario/CC_P1_Automatas/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/P1_Automata_pila.dir/src/main.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/P1_Automata_pila.dir/src/main.cpp.o -MF CMakeFiles/P1_Automata_pila.dir/src/main.cpp.o.d -o CMakeFiles/P1_Automata_pila.dir/src/main.cpp.o -c /home/usuario/CC_P1_Automatas/src/main.cpp
 
 CMakeFiles/P1_Automata_pila.dir/src/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/P1_Automata_pila.dir/src/main.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/usuario/CC/CC_P1_Automatas/src/main.cpp > CMakeFiles/P1_Automata_pila.dir/src/main.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/usuario/CC_P1_Automatas/src/main.cpp > CMakeFiles/P1_Automata_pila.dir/src/main.cpp.i
 
 CMakeFiles/P1_Automata_pila.dir/src/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/P1_Automata_pila.dir/src/main.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/usuario/CC/CC_P1_Automatas/src/main.cpp -o CMakeFiles/P1_Automata_pila.dir/src/main.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/usuario/CC_P1_Automatas/src/main.cpp -o CMakeFiles/P1_Automata_pila.dir/src/main.cpp.s
 
 # Object files for target P1_Automata_pila
 P1_Automata_pila_OBJECTS = \
@@ -173,7 +173,7 @@ P1_Automata_pila: CMakeFiles/P1_Automata_pila.dir/src/Transicion.cpp.o
 P1_Automata_pila: CMakeFiles/P1_Automata_pila.dir/src/main.cpp.o
 P1_Automata_pila: CMakeFiles/P1_Automata_pila.dir/build.make
 P1_Automata_pila: CMakeFiles/P1_Automata_pila.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/usuario/CC/CC_P1_Automatas/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX executable P1_Automata_pila"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/usuario/CC_P1_Automatas/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX executable P1_Automata_pila"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/P1_Automata_pila.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -185,6 +185,6 @@ CMakeFiles/P1_Automata_pila.dir/clean:
 .PHONY : CMakeFiles/P1_Automata_pila.dir/clean
 
 CMakeFiles/P1_Automata_pila.dir/depend:
-	cd /home/usuario/CC/CC_P1_Automatas/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/usuario/CC/CC_P1_Automatas /home/usuario/CC/CC_P1_Automatas /home/usuario/CC/CC_P1_Automatas/build /home/usuario/CC/CC_P1_Automatas/build /home/usuario/CC/CC_P1_Automatas/build/CMakeFiles/P1_Automata_pila.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /home/usuario/CC_P1_Automatas/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/usuario/CC_P1_Automatas /home/usuario/CC_P1_Automatas /home/usuario/CC_P1_Automatas/build /home/usuario/CC_P1_Automatas/build /home/usuario/CC_P1_Automatas/build/CMakeFiles/P1_Automata_pila.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/P1_Automata_pila.dir/depend
 
