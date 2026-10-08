@@ -12,8 +12,24 @@
 #include <fstream>
 #include <string>
 #include <exception>
+#include <filesystem>
 
 #include "../includes/LeerFichero.h"
+
+std::ifstream abrirFicheroEntradas(const std::string& nombre_fichero) {
+  const std::filesystem::path ruta_fichero(nombre_fichero);
+  std::ifstream fichero(ruta_fichero);
+  if (!fichero.is_open() && ruta_fichero.is_relative() &&
+      ruta_fichero.parent_path().empty()) {
+    fichero.clear();
+    fichero.open(std::filesystem::path("../tests") / ruta_fichero);
+    if (!fichero.is_open()) {
+      fichero.clear();
+      fichero.open(std::filesystem::path("tests") / ruta_fichero);
+    }
+  }
+  return fichero;
+}
 
 /** @brief función que muestra como se usa el programa */
 void usage(std::ostream& salida) {
@@ -90,7 +106,7 @@ int main(int argc, char* argv[]) {
     Automata automata = lector_configuracion.parsear(modo_traza);
 
     if (entradas_especificadas) {
-      std::ifstream fichero(fichero_entradas);
+      std::ifstream fichero = abrirFicheroEntradas(fichero_entradas);
       if (!fichero.is_open()) {
         std::cerr << "No se pudo abrir el fichero de cadenas: " << fichero_entradas << '\n';
         return 1;

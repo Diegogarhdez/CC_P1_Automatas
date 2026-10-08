@@ -20,12 +20,14 @@ La implementación por la que he optado ha sido la del automata por vaciado de p
 
 * ```make ```
 
-4. ejecutar el programa poniendo unicamente el nombre del archivo no la ruta completa
+4. ejecutar el programa indicando la configuración, si se desea la traza y el fichero de cadenas
 
-* ```./P1_Automata_pila -config <nombre fichero> ```
+* ```./P1_Automata_pila -config APv-1.txt -trace n -in cadenas1.txt```
 
-Las opciones implementadas son: 
+Si se indican solo los nombres de archivo, el programa busca primero en el directorio actual y después en `../tests` o `tests`. También se pueden indicar rutas explícitas, por ejemplo `tests/APv-1.txt`.
 
-* ```-config <nombre fichero> ```
+Las opciones implementadas son:
+
+* ```-config <fichero>```
 * ```-trace <y/n>```
-* ```-in <nombre fichero>```
+* ```-in <fichero>```
